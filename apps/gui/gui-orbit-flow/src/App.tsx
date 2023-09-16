@@ -12,7 +12,7 @@ import { Navigate, Route, Routes } from "react-router-dom";
 import { NotFoundPage } from "./components/NotFoundPage";
 
 // import printedLogo from "./assets/printed_transparent.svg";
-import { OrbitAppBar } from "./components/AppBar";
+import { OrbitAppBar } from "./components/OrbitAppBar";
 import { Home } from "./features/home";
 
 import "mapbox-gl/dist/mapbox-gl.css";

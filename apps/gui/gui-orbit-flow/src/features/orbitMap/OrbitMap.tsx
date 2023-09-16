@@ -10,10 +10,8 @@ import {
   useTheme,
 } from "@orbit-flow/design-system";
 import React, { useCallback, useState } from "react";
-import { PrintLocationList } from "./components/PrintLocationList";
-import { PrintMap } from "./components/PrintMap";
 
-import printLocations from "../../assets/barcelona_print_shops.json";
+import { PrintMap } from "./components/PrintMap";
 
 const drawerWidth = 240;
 
@@ -102,25 +100,10 @@ export function OrbitMap() {
         open={isOpen}
       >
         <Toolbar />
-        <Box flex={1} overflow="scroll">
-          <PrintLocationList
-            locations={printLocations.map((l) => ({
-              name: l.name,
-              coordinates: { latitude: l.latitude, longitude: l.longitude },
-            }))}
-          />
-        </Box>
+        <Box flex={1} overflow="scroll"></Box>
       </Drawer>
       <ContentContainer open={isOpen}>
-        <PrintMap
-          overlays={overlays}
-          dataSets={[
-            {
-              data: printLocations,
-              getLocation: (d) => [d.longitude, d.latitude],
-            },
-          ]}
-        />
+        <PrintMap overlays={overlays} dataSets={[]} />
       </ContentContainer>
     </Box>
   );

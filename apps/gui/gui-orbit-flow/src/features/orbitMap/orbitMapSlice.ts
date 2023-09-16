@@ -5,16 +5,16 @@ import { RootState } from "../../store";
 //     initialState
 // });
 
-type PrintLocationsSliceState = {
+type OrbitMapSliceState = {
   // ----- Visual state -----
   leftPanelOpen: boolean;
 };
 
-const initialState: PrintLocationsSliceState = {
+const initialState: OrbitMapSliceState = {
   leftPanelOpen: false,
 };
 
-const printLocationsSlice = createSlice({
+const orbitMapSlice = createSlice({
   name: "printLocations",
   initialState,
   reducers: {
@@ -28,11 +28,11 @@ const printLocationsSlice = createSlice({
   },
 });
 
-export const printLocationsActions = printLocationsSlice.actions;
-export const printLocationsReducer = printLocationsSlice.reducer;
+export const orbitMapActions = orbitMapSlice.actions;
+export const orbitMapReducer = orbitMapSlice.reducer;
 
 export const printLocationsSelectors = {
   visualState: {
-    leftPanelOpen: (state: RootState) => state.printLocations.leftPanelOpen,
+    leftPanelOpen: (state: RootState) => state.orbitMap.leftPanelOpen,
   },
 } as const;

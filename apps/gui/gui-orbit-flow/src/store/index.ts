@@ -1,8 +1,8 @@
 import { configureStore, ThunkAction, Action } from "@reduxjs/toolkit";
-import { printLocationsReducer } from "../features/printLocations/printLocationsSlice";
+import { orbitMapReducer } from "../features/orbitMap/orbitMapSlice";
 export const store = configureStore({
   reducer: {
-    printLocations: printLocationsReducer,
+    orbitMap: orbitMapReducer,
   },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({ serializableCheck: false }),

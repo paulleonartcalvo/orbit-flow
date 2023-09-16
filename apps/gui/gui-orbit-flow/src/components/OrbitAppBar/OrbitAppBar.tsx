@@ -15,7 +15,6 @@ import {
 } from "@orbit-flow/design-system";
 import { useMemo, useState } from "react";
 
-import printedLogo from "../../assets/printed_transparent.svg";
 import { useNavigate } from "react-router-dom";
 import { ProfileMenu } from "../ProfileMenu/ProfileMenu";
 
@@ -29,7 +28,7 @@ export function OrbitAppBar() {
   const pages: { id: string; label: string }[] = useMemo(
     () => [
       { id: "home", label: "Home" },
-      { id: "print", label: "Print" },
+      { id: "map", label: "Map" },
     ],
     []
   );
@@ -52,7 +51,7 @@ export function OrbitAppBar() {
         <IconButton size="large">
           <Icon.MenuRounded />
         </IconButton>
-        <img src={printedLogo} color="red" height="64" />
+
         <Stack
           direction="row"
           flex="1"
@@ -66,7 +65,7 @@ export function OrbitAppBar() {
             flex={1}
           >
             <Typography variant="h6" noWrap component="div">
-              Printed
+              Orbit Flow
             </Typography>
           </Box>
           <List

@@ -5,7 +5,7 @@ import {
   CssBaseline,
   MuiThemeProvider,
   Stack,
-} from "@printed/design-system";
+} from "@orbit-flow/design-system";
 import { useMemo } from "react";
 import { Navigate, Route, Routes } from "react-router-dom";
 import { AuthenticationGuard } from "./components/AuthenticationGuard";

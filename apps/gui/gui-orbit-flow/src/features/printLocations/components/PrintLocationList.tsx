@@ -1,4 +1,4 @@
-import { List, ListItem, Spacings, useTheme } from "@printed/design-system";
+import { List, ListItem, Spacings, useTheme } from "@orbit-flow/design-system";
 // import printLocations from "../../../assets/barcelona_print_shops.json";
 import { PrintLocationCard } from "./PrintLocationCard";
 import { getDistance } from "geolib";

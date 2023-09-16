@@ -1,5 +1,5 @@
 {
-  "name": "@printed/design-system",
+  "name": "@orbit-flow/design-system",
   "module": "index.ts",
   "type": "module",
   "scripts": {

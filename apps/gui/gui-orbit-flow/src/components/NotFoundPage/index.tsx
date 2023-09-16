@@ -1,4 +1,4 @@
-import { Alert, Box, Spacings, Stack, useTheme } from "@printed/design-system";
+import { Alert, Box, Spacings, Stack, useTheme } from "@orbit-flow/design-system";
 import { useNavigate } from "react-router-dom";
 
 export function NotFoundPage() {

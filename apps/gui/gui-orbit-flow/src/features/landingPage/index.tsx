@@ -1,4 +1,4 @@
-import { Box } from "@printed/design-system";
+import { Box } from "@orbit-flow/design-system";
 
 export function LandingPage() {
   return (

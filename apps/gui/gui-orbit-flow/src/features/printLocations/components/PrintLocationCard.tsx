@@ -6,7 +6,7 @@ import {
   Stack,
   Typography,
   useTheme,
-} from "@printed/design-system";
+} from "@orbit-flow/design-system";
 import { useIntl } from "react-intl";
 
 type Props = {

@@ -1,5 +1,5 @@
 {
-  "name": "@printed/gui-printed",
+  "name": "@orbit-flow/gui-orbit-flow",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -14,9 +14,8 @@
     "@deck.gl/core": "^8.9.22",
     "@deck.gl/layers": "^8.9.22",
     "@deck.gl/react": "^8.9.22",
-    "@printed/design-system": "workspace:*",
+    "@orbit-flow/design-system": "workspace:*",
     "@reduxjs/toolkit": "^1.9.5",
-    "design-system": "^2.5.0",
     "geolib": "^3.3.4",
     "mapbox-gl": "^2.15.0",
     "react-intl": "^6.4.4",

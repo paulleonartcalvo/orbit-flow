@@ -12,7 +12,7 @@ import {
   ListItemText,
   Box,
   useTheme,
-} from "@printed/design-system";
+} from "@orbit-flow/design-system";
 import { useMemo, useState } from "react";
 import { ProfileMenu } from "../ProfileMenu";
 

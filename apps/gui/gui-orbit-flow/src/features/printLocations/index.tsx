@@ -8,7 +8,7 @@ import {
   styled,
   Toolbar,
   useTheme,
-} from "@printed/design-system";
+} from "@orbit-flow/design-system";
 import React, { useCallback, useState } from "react";
 import { PrintLocationList } from "./components/PrintLocationList";
 import { PrintMap } from "./components/PrintMap";

@@ -1,4 +1,4 @@
-import { Box, CircularProgress } from "@printed/design-system";
+import { Box, CircularProgress } from "@orbit-flow/design-system";
 
 export function LoadingPage() {
   return (

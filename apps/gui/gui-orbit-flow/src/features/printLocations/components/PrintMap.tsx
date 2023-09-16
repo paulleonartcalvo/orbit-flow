@@ -3,7 +3,7 @@ import { WebMercatorViewport, MapViewState } from "@deck.gl/core/typed";
 import { ScatterplotLayer } from "@deck.gl/layers/typed";
 import MapGL, { MapRef } from "react-map-gl";
 import { useEffect, useMemo, useRef, useState } from "react";
-import { Box } from "@printed/design-system";
+import { Box } from "@orbit-flow/design-system";
 import { getBounds } from "geolib";
 
 type Dataset<T> = {

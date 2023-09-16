@@ -1,4 +1,4 @@
-# @printed/design-system
+# @orbit-flow/design-system
 
 To install dependencies:
 

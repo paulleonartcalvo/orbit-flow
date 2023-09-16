@@ -1,5 +1,5 @@
 {
-  "name": "printed",
+  "name": "orbit-flow",
   "module": "index.ts",
   "type": "module",
   "scripts": {

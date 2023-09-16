@@ -8,16 +8,15 @@ import {
 } from "@orbit-flow/design-system";
 import { useMemo } from "react";
 import { Navigate, Route, Routes } from "react-router-dom";
-import { AuthenticationGuard } from "./components/AuthenticationGuard";
+
 import { NotFoundPage } from "./components/NotFoundPage";
 
 // import printedLogo from "./assets/printed_transparent.svg";
-import { PrintedAppBar } from "./components/PrintedAppBar";
+import { OrbitAppBar } from "./components/AppBar";
 import { Home } from "./features/home";
 
-import { PrintLocations } from "./features/printLocations";
-
 import "mapbox-gl/dist/mapbox-gl.css";
+import { OrbitMap } from "./features/orbitMap";
 
 function App() {
   const { isLoading } = useAuth0();
@@ -43,32 +42,14 @@ function App() {
       {isLoading && loadingPage}
       {!isLoading && (
         <Stack sx={{ width: "100%", height: "100%" }}>
-          <PrintedAppBar />
+          <OrbitAppBar />
           <Box flex={1} width="100%">
             <Routes>
               <Route path="*" element={<NotFoundPage />} />
               <Route path="/" element={<Navigate to="home" />} />
               <Route path="home" element={<Home />} />
-              <Route
-                path="print"
-                element={<AuthenticationGuard component={PrintLocations} />}
-              />
+              <Route path="map" element={<OrbitMap />} />
             </Routes>
-            {/* {!isAuthenticated && <LandingPage />}
-            {isAuthenticated && (
-              <Routes>
-                <Route path="*" element={<NotFoundPage />} />
-                <Route path="/" element={<Navigate to="home" />} />
-                <Route
-                  path="home"
-                  element={<AuthenticationGuard component={Home} />}
-                />
-                <Route
-                  path="print"
-                  element={<AuthenticationGuard component={PrintLocations} />}
-                />
-              </Routes>
-            )} */}
           </Box>
         </Stack>
       )}

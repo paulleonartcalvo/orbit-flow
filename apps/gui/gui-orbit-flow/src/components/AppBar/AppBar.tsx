@@ -14,12 +14,12 @@ import {
   useTheme,
 } from "@orbit-flow/design-system";
 import { useMemo, useState } from "react";
-import { ProfileMenu } from "../ProfileMenu";
 
 import printedLogo from "../../assets/printed_transparent.svg";
 import { useNavigate } from "react-router-dom";
+import { ProfileMenu } from "../ProfileMenu/ProfileMenu";
 
-export function PrintedAppBar() {
+export function OrbitAppBar() {
   const theme = useTheme();
   const navigate = useNavigate();
   const [profileMenuAnchorElement, setProfileMenuAnchorElement] =

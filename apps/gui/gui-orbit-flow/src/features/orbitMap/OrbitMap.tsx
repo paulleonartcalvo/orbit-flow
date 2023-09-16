@@ -46,7 +46,7 @@ const ContentContainer = styled(Box, {
 //   justifyContent: 'flex-end',
 // }));
 
-export function PrintLocations() {
+export function OrbitMap() {
   const theme = useTheme();
   const [isOpen, setIsOpen] = useState(false);
 

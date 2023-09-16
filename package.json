@@ -1,0 +1,21 @@
+{
+  "name": "printed",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "e2e": "playwright test --debug"
+  },
+  "workspaces": [
+    "packages/*",
+    "apps/gui/*"
+  ],
+  "dependencies": {
+    "prettier": "^2.8.7",
+    "syncpack": "^9.8.4"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.36.1",
+    "bun-types": "latest"
+  },
+  "peerDependencies": {}
+}

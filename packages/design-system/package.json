@@ -1,0 +1,28 @@
+{
+  "name": "@printed/design-system",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "prebuild": "echo 'Building...'",
+    "build": "bun build.ts"
+  },
+  "dependencies": {
+    "@emotion/css": "^11.10.6",
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@mui/icons-material": "^5.11.11",
+    "@mui/material": "^5.11.14",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-toastify": "^9.1.2"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "style-dictionary": "^3.7.2",
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}

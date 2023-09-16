@@ -1,0 +1,42 @@
+{
+  "name": "@printed/gui-printed",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "bunx --bun vite",
+    "build": "bunx --bun tsc && bunx --bun vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "bunx --bun vite preview"
+  },
+  "dependencies": {
+    "@auth0/auth0-react": "^2.2.0",
+    "@deck.gl/core": "^8.9.22",
+    "@deck.gl/layers": "^8.9.22",
+    "@deck.gl/react": "^8.9.22",
+    "@printed/design-system": "workspace:*",
+    "@reduxjs/toolkit": "^1.9.5",
+    "design-system": "^2.5.0",
+    "geolib": "^3.3.4",
+    "mapbox-gl": "^2.15.0",
+    "react-intl": "^6.4.4",
+    "react-map-gl": "^7.1.3",
+    "react-redux": "^8.1.1",
+    "react-router-dom": "^6.14.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/mapbox-gl": "^2.7.12",
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "@vitejs/plugin-react-swc": "^3.3.2",
+    "eslint": "^8.45.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5"
+  }
+}

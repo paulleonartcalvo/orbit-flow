@@ -70,7 +70,7 @@ export default defineConfig({
 
   /* Run your local dev server before starting the tests */
   webServer: {
-    command: "(cd apps/gui/gui-printed && bun dev)",
+    command: "(cd apps/gui/gui-orbit-flow && bun dev)",
     url: "http://localhost:3000",
     reuseExistingServer: !process.env.CI,
   },
